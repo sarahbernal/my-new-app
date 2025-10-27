@@ -1,16 +1,15 @@
-"use client";
-import Counter from "../component/Counter";
+import Counter from "./components/Counter";
 
 export default function Home() {
   return (
-    <main style={{ textAlign: "center", padding: "50px"}}>
+    <main style={{ textAlign: "center", padding: "40px" }}>
       <h1>Next.js Button Counter</h1>
 
-      {/* One Counter with defaults */}
+        {/* First counter with default values */}
       <Counter />
 
-      {/*One Counter with custom props*/}
-      <Counter initialCount={5} initialStep={2}/>
+      {/*Second counter with custom starting values */}
+      <Counter initialCount={10} initialStep={5} />
     </main>
   );
 }
